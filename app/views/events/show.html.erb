@@ -1,18 +1,19 @@
-<p id="notice"><%= notice %></p>
-<p>Debut de l'evement</p>
-<p> <%= @event.start_date %> </p> <br>
-<p> Titre </p>
-<p> <%= @event.title %> </p> <br>
-<p> Description </p>
-<p> <%= @event.description %> </p> <br>
-<p> Durée</p>
-<p> <%= @event.duration %> </p> <br>
-<p> prix </p>
-<p> <%= @event.price %> </p> <br>
-<p> lieu de l'evement </p>
-<p> <%= @event.location %> </p> <br>
-
-
-
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<div class="container">
+  <h1>Events</h1>
+  <div class="">
+    <h5>Debut de l'evement</h5>
+    <p> <%= @event.start_date %> </p><br>
+    <h5> Titre </h5>
+    <p> <%= @event.title %> </p><br>
+    <h5> Description </h5>
+    <p> <%= @event.description %> </p><br>
+    <h5> Durée</h5>
+    <p> <%= @event.duration %> </p><br>
+    <h5> prix </h5>
+    <p> <%= @event.price %> </p>
+    <h5> lieu de l'evement </h5>
+    <p> <%= @event.location %> </p>
+  </div>
+    <%= link_to 'Edit', edit_event_path(@event) %> |
+    <%= link_to 'Back', events_path %>
+</div>
